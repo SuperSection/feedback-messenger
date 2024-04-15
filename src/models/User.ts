@@ -54,7 +54,7 @@ const UserSchema: Schema<User> = new Schema({
 
 
 const UserModel =
-  (models.Message as Model<Message>) ||
-  model<Message>("Message", UserSchema);
+  (models.Message as Model<User>) ||
+  model<User>("Message", UserSchema);
 
 export default UserModel;
